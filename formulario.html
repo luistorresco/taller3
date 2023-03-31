@@ -5,20 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body background="img/background.jpg">
     <section>
-        <nav class="menu">
+        <nav>
             <ul>
                 <li><a href="index.htm">Inicio</a></li>
                 <li><a href="multimedia.html">galeria</a></li>
                 <li><a href="formulario.html">contactanos</a></li>
-                <li><a href="listas.html">lista de precios</a>
+                <li><a href= "tablas.html">tabla de precios</a>
             </ul>
         </nav>
     </section>
     <main> 
+<section>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" minlength="8" required>
+    
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color" required>
+    
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+    
+            <label for="mes">Mes favorito:</label>
+            <input type="month" id="mes" name="mes" required>
+    
+            <label for="numero">Número favorito:</label>
+            <input type="number" id="numero" name="numero" required>
+    
+            <label for="rango">Rango de edad:</label>
+            <input type="range" id="rango" name="rango" min="18" max="65" required>
+    
+            <label for="url">Sitio web favorito:</label>
+            <input type="url" id="url" name="url" required>
+    
+            <label for="archivo">Selecciona un archivo:</label>
+            <input type="file" id="archivo" name="archivo" required>
+    
+            <label for="radio1">Opción 1:</label>
+            <input type="radio" id="radio1" name="opcion" value="1" required>
+            <label for="radio2">Opción 2:</label>
+            <input type="radio" id="radio2" name="opcion" value="2" required>
+    
+            <label for="checkbox1">Opción A:</label>
+            <input type="checkbox" id="checkbox1" name="opcionA" value="A" required>
+            <label for="checkbox2">Opción B:</label>
+            <input type="checkbox" id="checkbox2" name="opcionB" value="B" required>
+    
+            <label for="textarea">Mensaje:</label>
+            <textarea id="textarea" name="mensaje" rows="4" cols="40" required></textarea>
+    
+            <input type="submit" value="Enviar">
+        </form>
 
+    
+
+
+
+
+</section>
 
 
 
